@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
-const ASSISTANT_ID = 'your-assistant-id'; // Assistants 플랫폼에서 복사
+const ASSISTANT_ID = 'asst_B7rKsT4xr3zBtA7nSr785Ttw'; // Assistants 플랫폼에서 복사
 
 app.post('/chat', async (req, res) => {
   const message = req.body.message;
